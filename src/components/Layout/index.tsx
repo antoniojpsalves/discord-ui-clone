@@ -1,16 +1,18 @@
 import { Grid } from './styles';
 import ServerList from '../ServerList';
-
-// export default function() {
-//     return (
-//         <h1>Hello World.</h1>
-//     );
-// }
+import ServerName from '../ServerName';
+import ChannelInfo from '../ChannelInfo';
+import ChannelList from '../ChannelList';
+import UserInfo from '../UserInfo';
 
 const Layout: React.FC = () => {
     return(
         <Grid>
             <ServerList />
+            <ServerName />
+            <ChannelInfo />
+            <ChannelList />
+            <UserInfo />
         </Grid>
     )
 };
